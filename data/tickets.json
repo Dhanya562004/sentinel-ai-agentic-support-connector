@@ -1,0 +1,152 @@
+[
+  {
+    "id": "TICK-1001",
+    "customer_name": "Rahul Sharma",
+    "title": "Payment failed but amount debited from bank account",
+    "description": "I tried to pay my monthly invoice of $499 via UPI/Credit Card on Razorpay gateway. The transaction failed at checkout showing 'Gateway Timeout', but ₹41,000 ($499) was debited from my HDFC bank account. Order ID is ORD-88492. Please issue an immediate refund or credit the account.",
+    "status": "open",
+    "priority": "High",
+    "category": "Payment Failure",
+    "created_at": "2026-10-01T10:15:00Z"
+  },
+  {
+    "id": "TICK-1002",
+    "customer_name": "Sarah Jenkins",
+    "title": "Refund delay for cancelled enterprise subscription",
+    "description": "I requested a refund for invoice INV-2026-091 on September 15th after cancelling our enterprise annual plan. Customer support promised a refund within 5-7 working days, but 12 days have passed and no credit has been received in our corporate account.",
+    "status": "pending",
+    "priority": "Medium",
+    "category": "Refund Delay",
+    "created_at": "2026-09-27T14:30:00Z"
+  },
+  {
+    "id": "TICK-1003",
+    "customer_name": "Alex Chen",
+    "title": "Unable to login due to 2FA OTP timeout",
+    "description": "I am locked out of my admin dashboard. The 2FA SMS code is not arriving on my registered mobile number (+1 555-0192), and the authenticator app backup code gives an 'Invalid Token' error. We have an urgent customer release pending.",
+    "status": "open",
+    "priority": "High",
+    "category": "Login Issues",
+    "created_at": "2026-10-02T08:00:00Z"
+  },
+  {
+    "id": "TICK-1004",
+    "customer_name": "Vikram Malhotra",
+    "title": "Suspicious unauthorized transaction attempt on card",
+    "description": "Our monitoring system flagged an unauthorized transaction attempt of $2,450 originating from an unknown IP address in Eastern Europe. We suspect a potential hack or fraud on our billing API key. Please freeze our payout gateway immediately.",
+    "status": "open",
+    "priority": "High",
+    "category": "Fraud Suspicion",
+    "created_at": "2026-10-02T06:45:00Z"
+  },
+  {
+    "id": "TICK-1005",
+    "customer_name": "Elena Rostova",
+    "title": "HTTP 500 Internal Server Error on Webhook Endpoint",
+    "description": "Starting 04:00 UTC today, all POST requests sent to our endpoint https://api.acme.com/v1/webhooks/payments return HTTP 500 Internal Server Error. The API gateway logs show payload parsing failures for event 'payment.dispute.created'.",
+    "status": "open",
+    "priority": "High",
+    "category": "API Errors",
+    "created_at": "2026-10-02T04:12:00Z"
+  },
+  {
+    "id": "TICK-1006",
+    "customer_name": "David Miller",
+    "title": "Auto-renewal failed and account unexpectedly downgraded",
+    "description": "Our Pro Team subscription was downgraded to Free tier automatically because the payment gateway failed to charge our credit card on file. Our team members have lost access to collaborative workspaces. Please re-activate our subscription.",
+    "status": "pending",
+    "priority": "Medium",
+    "category": "Subscription Issues",
+    "created_at": "2026-10-01T16:20:00Z"
+  },
+  {
+    "id": "TICK-1007",
+    "customer_name": "Priya Patel",
+    "title": "Security vulnerability alert: unauthorized password reset email received",
+    "description": "I received multiple password reset request emails that I did not initiate. I fear someone is trying to hack my account or brute force my credentials. Please review account access logs and enable biometric enforcement.",
+    "status": "open",
+    "priority": "High",
+    "category": "Security Alert",
+    "created_at": "2026-10-02T07:10:00Z"
+  },
+  {
+    "id": "TICK-1008",
+    "customer_name": "Michael Chang",
+    "title": "API Rate Limit HTTP 429 error on production key",
+    "description": "Our production server is throwing HTTP 429 'Too Many Requests' despite our tier allowing up to 10,000 RPM. Current throughput is under 2,500 RPM. This is causing critical service degradation for our end users.",
+    "status": "open",
+    "priority": "High",
+    "category": "API Errors",
+    "created_at": "2026-10-01T22:05:00Z"
+  },
+  {
+    "id": "TICK-1009",
+    "customer_name": "Emma Watson",
+    "title": "Duplicate invoice charge on annual billing cycle",
+    "description": "Our accounting department noticed two identical charges of $1,200 on our credit card statement on October 1st for Invoice #INV-8831. Please credit back the duplicate charge immediately.",
+    "status": "pending",
+    "priority": "Medium",
+    "category": "Payment Failure",
+    "created_at": "2026-10-01T11:40:00Z"
+  },
+  {
+    "id": "TICK-1010",
+    "customer_name": "Carlos Gomez",
+    "title": "Request for GDPR data export and account closure",
+    "description": "Pursuant to GDPR Article 20, I am requesting a complete machine-readable export of all customer support logs and account data associated with enterprise tenant 'GomezTech', followed by account deletion.",
+    "status": "pending",
+    "priority": "Low",
+    "category": "Account Administration",
+    "created_at": "2026-09-29T09:30:00Z"
+  },
+  {
+    "id": "TICK-1011",
+    "customer_name": "Ananya Gupta",
+    "title": "Webhook delivery latency exceeding 15 seconds",
+    "description": "We are experiencing significant delay in receiving 'payment.captured' webhooks. Latency has increased from ~200ms to over 15 seconds, breaking our real-world real-time order fulfillment workflow.",
+    "status": "open",
+    "priority": "Medium",
+    "category": "API Errors",
+    "created_at": "2026-10-01T18:15:00Z"
+  },
+  {
+    "id": "TICK-1012",
+    "customer_name": "John Doe",
+    "title": "Custom domain SSL certificate renewal failing",
+    "description": "Our custom white-label domain customer-portal.acme.com shows an SSL certificate expired warning. The automatic Let's Encrypt renewal script returned domain verification failure.",
+    "status": "open",
+    "priority": "High",
+    "category": "Domain & SSL",
+    "created_at": "2026-10-02T02:50:00Z"
+  },
+  {
+    "id": "TICK-1013",
+    "customer_name": "Lisa Ray",
+    "title": "Inquiry regarding team seats addition discount pricing",
+    "description": "We are looking to expand our team from 25 seats to 75 seats for the upcoming quarter. Can sales provide a custom volume discount code for the extra seats?",
+    "status": "closed",
+    "priority": "Low",
+    "category": "General Inquiry",
+    "created_at": "2026-09-25T14:10:00Z"
+  },
+  {
+    "id": "TICK-1014",
+    "customer_name": "Karthik Subramanian",
+    "title": "Payment gateway payment failed during checkout redirect",
+    "description": "Users attempting to checkout via NetBanking are being redirected to a blank screen with error 'ERR_CONNECTION_RESET' at gateway handoff. Payment failed for 14 customers in the past hour.",
+    "status": "open",
+    "priority": "High",
+    "category": "Payment Failure",
+    "created_at": "2026-10-02T08:30:00Z"
+  },
+  {
+    "id": "TICK-1015",
+    "customer_name": "Sophia Martinez",
+    "title": "PDF invoice generation corrupted characters",
+    "description": "When downloading monthly billing invoices from the customer portal, the PDF contains corrupted characters for non-ASCII currency symbols (€, £, ₹). Please fix the PDF generation renderer.",
+    "status": "pending",
+    "priority": "Low",
+    "category": "General Inquiry",
+    "created_at": "2026-09-28T11:00:00Z"
+  }
+]

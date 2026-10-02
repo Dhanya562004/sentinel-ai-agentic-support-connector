@@ -1,0 +1,50 @@
+[
+  {
+    "name": "search_tickets",
+    "description": "Searches customer support tickets by title, description, category, or ID",
+    "input": "query",
+    "output": "list of ticket objects matching query"
+  },
+  {
+    "name": "get_ticket",
+    "description": "Retrieves a specific customer support ticket by its exact ticket ID",
+    "input": "ticket_id",
+    "output": "ticket object containing ticket details"
+  },
+  {
+    "name": "list_tickets",
+    "description": "Lists all support tickets in the system with optional status or priority filtering",
+    "input": "status, priority",
+    "output": "list of all ticket objects"
+  },
+  {
+    "name": "summarize_ticket",
+    "description": "Generates a concise 1-line summary of ticket description using AI reasoning rules",
+    "input": "text",
+    "output": "1-line executive summary string"
+  },
+  {
+    "name": "classify_priority",
+    "description": "Classifies ticket priority into High, Medium, or Low based on critical keywords",
+    "input": "text",
+    "output": "High | Medium | Low priority string"
+  },
+  {
+    "name": "generate_reply",
+    "description": "Generates a structured, empathetic, and actionable customer support response",
+    "input": "text, summary, priority, ticket",
+    "output": "formatted support reply string"
+  },
+  {
+    "name": "apply_guardrails",
+    "description": "Evaluates inputs and outputs for sensitive keywords, fraud detection, and safety compliance",
+    "input": "query, reply",
+    "output": "guardrails assessment object including human review flag"
+  },
+  {
+    "name": "evaluate_response",
+    "description": "Scores agent response quality out of 3 points based on length, completeness, and priority correctness",
+    "input": "ticket, summary, priority, reply",
+    "output": "evaluation score object (X/3) with detailed breakdown"
+  }
+]
